@@ -2,7 +2,7 @@
 #include <string>
 #include <cmath>
 
-#include "./base64.hpp"
+#include "./Base64.hpp"
 
 class Hex {
 private:

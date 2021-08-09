@@ -1,7 +1,7 @@
 #pragma once
 #include <string>
 
-#include "./base64.hpp"
+#include "./Base64.hpp"
 
 class String {
 private:
