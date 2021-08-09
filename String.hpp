@@ -12,6 +12,7 @@ public:
         
         int quotient = val / 2;
         int remainder = val % 2;
+        int bits = 1;
         binary += std::to_string(remainder);
 
         while(true) {
@@ -19,6 +20,12 @@ public:
             remainder = quotient % 2;
             quotient /= 2;
             binary += std::to_string(remainder);
+            bits++;
+        }
+
+        while (bits < 8) {
+            binary += "0";
+            bits++;
         }
 
         std::string reversedBinary = "";
